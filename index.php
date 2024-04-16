@@ -7,7 +7,7 @@ $user = [];
 $user['username'] = $_POST['username'] ?? '';
 $user['password'] = $_POST['password'] ?? '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {-
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //-------------------------------------- Validaion-------------------------------------
     if (empty($user['username']) || empty($user['password'])) {
         $errors['credentials'] = 'Username and password are required';
