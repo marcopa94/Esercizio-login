@@ -46,11 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }   }
 
 
-$password = 'mypassword';
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-echo "Password: $password\n";
-echo "Hashed Password: $hashed_password\n";
+;
 
 
 
